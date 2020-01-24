@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
+import '../src/screens/home.dart';
 
-class App extends StatefulWidget {
-
-  @override
-  _AppState createState() => _AppState();
-}
-
-class _AppState extends State<App> {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        
-        body: Text("Your home!!!"),
-      ),
+    return new MaterialApp(
+      title: "List in Flutter",
+      home: HomeScreen()
     );
   }
 }
