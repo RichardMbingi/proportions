@@ -6,7 +6,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "List in Flutter",
-      home: HomeScreen()
+      home: HomeScreen(),
+      theme: ThemeData(
+        textTheme: TextTheme(
+          body1: TextStyle(color: Color(0xFF363636)),
+        ),
+      ),
     );
   }
 }

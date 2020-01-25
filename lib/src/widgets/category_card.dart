@@ -11,6 +11,7 @@ final List<Category> categoryList = [
 Widget buildCategoryCard(BuildContext context, int index) {
   final category = categoryList[index];
 
+//?Card
   return Container(
     child: Card(
       child: Column(
