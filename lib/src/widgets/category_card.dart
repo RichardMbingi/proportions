@@ -9,8 +9,7 @@ final List<Category> categoryList = [
 ];
 
 Widget buildCategoryCard(BuildContext context, int index) {
-
-final category = categoryList[index];
+  final category = categoryList[index];
 
   return Container(
     child: Card(

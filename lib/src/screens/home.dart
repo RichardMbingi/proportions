@@ -2,11 +2,28 @@ import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: buildTotalAmount(context),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          //?Total amount display
+          Flexible(
+            child: buildTotalAmountCard(),
+          ),
+
+          //?Category list
+          Flexible(
+            child: ListView.builder(
+              itemCount: categoryList.length,
+              itemBuilder: (BuildContext context, int index) =>
+                  buildCategoryCard(context, index),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
