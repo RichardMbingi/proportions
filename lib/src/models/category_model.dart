@@ -1,6 +1,6 @@
 class Category {
   String category_name;
-  double amount;
+  int amount;
   double percentage;
 
   Category(this.category_name, this.amount, this.percentage);
