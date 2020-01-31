@@ -8,7 +8,7 @@ final List<Category> categoryList = [
   Category("Emergency", 25285, 17.25),
 ];
 
-Widget buildCategoryCard(BuildContext context, int index) {
+Widget categoryCard(BuildContext context, int index) {
   final category = categoryList[index];
 
 //?Card
