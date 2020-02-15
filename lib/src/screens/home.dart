@@ -14,11 +14,18 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          buildTotalAmountCard(),
-          categoryCardList(),
-          addCategoryButton(),
+          totalAmount(),
+          categories(),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        child: Icon(Icons.add),
+      ),
     );
+  }
+
+  Widget categories() {
+    return Column();
   }
 }

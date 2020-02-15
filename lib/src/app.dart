@@ -6,9 +6,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "List in Flutter",
-      home: HeroScreen(),
-
-      //TODO: Display Rockwell font 
+      home: HomeScreen(),
       theme: ThemeData(
         fontFamily: 'Rockwell',
         textTheme: TextTheme(
