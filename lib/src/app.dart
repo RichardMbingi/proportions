@@ -10,7 +10,10 @@ class App extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Rockwell',
         textTheme: TextTheme(
-          body1: TextStyle(color: Color(0xFF363636)),
+          body1: TextStyle(
+            color: Color(0xFF363636),
+            fontSize: 18.0
+          ),
         ),
       ),
     );
