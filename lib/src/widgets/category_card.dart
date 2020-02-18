@@ -7,7 +7,7 @@ Widget categoryCard() {
       decoration: BoxDecoration(
         border: Border.all(
           color: Color(0xFF363636),
-          width: 4.0
+          width: 3.0
         ),
         color: Color(0xFFFF901D),
         borderRadius: BorderRadius.circular(25.0),
