@@ -4,8 +4,15 @@ Widget categoryCard() {
 
     //TODO: Make border radius and color(black)
     return Container(
-      color: Color(0xFFFF901D),
-      margin: EdgeInsets.fromLTRB(60.0, 30.0, 60.0, 5.0),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Color(0xFF363636),
+          width: 4.0
+        ),
+        color: Color(0xFFFF901D),
+        borderRadius: BorderRadius.circular(25.0),
+      ),
+      margin: EdgeInsets.fromLTRB(55.0, 30.0, 55.0, 5.0),
       padding: EdgeInsets.all(25.0),
       child: Row(
         children: <Widget>[
